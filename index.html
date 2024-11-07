@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Formulário Interativo</title> 
+</head>
+
+<body>
+    <!-- Título principal da página -->
+    <h1>Faça o seu cadastro</h1>
+
+    <!-- Início do formulário -->
+    <form>
+        <!-- Campo de entrada para o nome do usuário -->
+        <label for="fname">Nome:</label><br>
+        <input type="text" required placeholder="Nome" id="Nome" name="Nome"><br>
+        
+        <!-- Campo de entrada para o e-mail -->
+        <label for="fe-mail">E-mail:</label><br>
+        <input type="email" required placeholder="E-mail" id="E-mail" name="E-mail"><br>
+        
+        <!-- Campo de entrada para a idade do usuário -->
+        <label for="idade">Idade:</label><br>
+        <input type="number" name="idade" min="0" required><br>
+        
+        <!-- Caixa de texto para mensagem -->
+        <label class="text-box" for="ftext">Deixe sua mensagem:</label><br>
+        <textarea id="ftext" name="mensagem" placeholder="Mensagem" rows="4" cols="50"></textarea><br>
+        
+        <!-- Botão de envio do formulário -->
+        <input class="submit" type="submit" value="ENVIAR MENSAGEM">
+        
+        <!-- Caixa de seleção para inscrição em novidades -->
+        <label for="newsletter">Quero receber novidades</label>
+        <input type="checkbox" id="newsletter" name="newsletter"><br>
+    </form>
+</body>
+</html>
